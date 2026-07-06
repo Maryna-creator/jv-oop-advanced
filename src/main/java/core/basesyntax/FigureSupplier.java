@@ -10,9 +10,9 @@ public class FigureSupplier {
     private ColorSupplier colorSupplier = new ColorSupplier();
 
     public Figure getRandomFigure() {
-        int figure = new Random().nextInt(FIGURE_COUNT);
+        int figure = random.nextInt(FIGURE_COUNT);
         String randomColor = colorSupplier.getRandomColor();
-        int size = new Random().nextInt(MAX_SIZE);
+        int size = random.nextInt(MAX_SIZE);
 
         switch (figure) {
             case 0:
