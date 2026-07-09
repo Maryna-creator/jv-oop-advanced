@@ -31,8 +31,6 @@ public class FigureSupplier {
     }
 
     public Figure getDefaultFigure() {
-        String color = "white";
-        int radius = DEFAULT_RADIUS;
-        return new Circle(color, radius);
+        return new Circle(Color.WHITE.name(), DEFAULT_RADIUS);
     }
 }
